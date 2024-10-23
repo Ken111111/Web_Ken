@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>グエン・トゥアン・クアン - 自動化エンジニア</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="image.jpg" alt="グエン・トゥアン・クアン" class="profile-img">
+            <h1>グエン・トゥアン・クアン</h1>
+            <p>自動化エンジニア</p>
+        </div>
+        <div class="flag-container">
+            <a href="index_vn.html" class="flag">
+                <img src="Picture_social_media/Cờ VIệt nam.png" alt="ベトナム国旗">
+            </a>
+            <a href="index_english.html" class="flag">
+                <img src="Picture_social_media/Cờ anh.jpg" alt="米国国旗">
+            </a>
+            <a href="index_japanese.html" class="flag">
+                <img src="Picture_social_media/cờ nhật.png" alt="US Flag">
+            </a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>自己紹介</h2>
+            <p>こんにちは！ 私はグエン・トゥアン・クアン、自動化エンジニアであり、電気システムの設計およびPLCのプログラミングに経験があります。SCADA/HMIシステムからIoTソリューションまで、多くの監視および自動化制御プロジェクトに参加しました。</p>
+            <br>
+            <ul>
+                <li>電気キャビネットの設計および制御回路図の作成 (2D、3D)</li>
+                <li>電気システムの設置および保守</li>
+                <li>SCADAおよびHMIインターフェースの設計</li>
+                <li>技術図面の設計</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>主要プロジェクト</h2>
+            <div class="project">
+                <h3>BMSシステム (2023年11月 - 2023年12月)</h3>
+                <p>役職: 電気キャビネット設計およびPLCプログラミング</p>
+                <p>PLC S7-1200とWinCC Professionalを使用して、カントー市のVinmec病院で医療ガス監視システムを設計。RS485通信プロトコルを介して27台のデバイスからデータを収集。</p>
+            </div>
+            <div class="project">
+                <h3>廃水処理システム (2024年4月 - 2024年5月)</h3>
+                <p>役職: 電気キャビネット設計およびPLCプログラミング</p>
+                <p>クアンナム省のフンヴォンホテルの廃水処理システムの監視および制御インターフェースを設計。</p>
+            </div>
+            <div class="project">
+                <h3>IoT監視システム (2024年7月 - 2024年8月)</h3>
+                <p>役職: 電気キャビネット設計およびLuaプログラミング</p>
+                <p>ホーチミン市のCity International HospitalやGia Dinh General Hospitalなどの病院で医療ガスIoT監視インターフェースを設計。</p>
+            </div>
+            
+            <!-- スライドショーセクション -->
+            <div class="slideshow-container">
+                <div class="slideshow-images">
+                    <img src="Picture_Project/1.jpg"  class="slide">
+                    <img src="Picture_Project/2.png"  class="slide">
+                    <img src="Picture_Project/3.png"  class="slide">
+                    <img src="Picture_Project/4.jpg"  class="slide">
+                    <img src="Picture_Project/5.png"  class="slide">
+                    <img src="Picture_Project/6.png"  class="slide">
+                    <img src="Picture_Project/7.jpg"  class="slide">
+                    <img src="Picture_Project/8.png"  class="slide">
+                    <img src="Picture_Project/9.png"  class="slide">
+                    <img src="Picture_Project/10.png"  class="slide">
+                </div>
+    
+                <!-- 前後ボタン -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+    
+            <!-- モーダル -->
+            <div id="imageModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <span class="modal-prev">&#10094;</span>
+                <span class="modal-next">&#10095;</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="Picture_Skills/code.jpg" class="skill-icon">
+                    <h3>プログラミング</h3>
+                    <p>C, Python, Lua, Javascript, HTML</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/Software.jpg" class="skill-icon">
+                    <h3>ソフトウェア</h3>
+                    <p>Eplan, Autocad, Inventor, Tia Portal</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/enclosure.jpg" class="skill-icon">
+                    <h3>電気キャビネット設計</h3>
+                    <p>制御回路図 (2D、3D)</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/sacada.jpg" class="skill-icon">
+                    <h3>SCADAおよびHMI設計</h3>
+                    <p>プロフェッショナルなSCADAおよびHMIインターフェース</p>
+                </div>
+                <div class="skill-item">
+                    <img src="Picture_Skills/Languages.jpg" class="skill-icon">
+                    <h3>言語</h3>
+                    <p>英語、日本語</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>趣味</h2>
+            <div class="hobby-cards">
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/Piano.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/Piano.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/swimming.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/swimming.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/technology.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/technology.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-card-inner">
+                        <div class="hobby-card-front">
+                            <img src="Picture_Hobbies/Languages_1.jpg" class="hobby-img">
+                        </div>
+                        <div class="hobby-card-back">
+                            <img src="Picture_Hobbies/Languages_1.jpg" class="hobby-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>学歴</h2>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>トンドゥックタン大学 - ホーチミン市</h3>
+                    <span class="years">2019年 - 2023年</span>
+                    <p>専攻: 制御および自動化工学</p>
+                    <ul>
+                        <li>自動制御システム、SCADA、PLCに関するコースを修了</li>
+                        <li>習得スキル: 電気システム設計、PLCプログラミング、AutoCAD、Eplan</li>
+                        <li>プログラミング: C、Python、JavaScript、HTML、CSS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>グエン・フエ高校 - ブンタウ市</h3>
+                    <span class="years">2016年 - 2019年</span>
+                    <p>専攻: 一般教育</p>
+                    <ul>
+                        <li>課外活動に参加: 音楽、スポーツ</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>フオックタン中学校 - ブンタウ市</h3>
+                    <span class="years">2012年 - 2016年</span>
+                    <p>プログラム: 基礎教育</p>
+                    <ul>
+                        <li>スポーツおよび芸術活動に参加</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="education-content">
+                    <h3>フオックタン小学校 - ブンタウ市</h3>
+                    <span class="years">2007年 - 2012年</span>
+                    <p>プログラム: 基礎教育</p>
+                    <ul>
+                        <li>スポーツおよび芸術活動に参加</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <div class="container">
+            <h2>資格</h2>
+            <div class="certificate">
+                <a href="" target="_blank">
+                    <h3>卒業証明書 - 制御および自動化工学</h3>
+                    <p>発行者: Ton Duc Thang 大学</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="PDF/WORD MOS.pdf" target="_blank">
+                    <h3>Microsoft Office Word® 2016 資格</h3>
+                    <p>発行者: IGG ベトナム</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="PDF/EXCEL MOS.pdf" target="_blank">
+                    <h3>Microsoft Office Excel® 2016 資格</h3>
+                    <p>発行者: IGG ベトナム</p>
+                </a>
+            </div>
+            <div class="certificate">
+                <a href="https://credentials.britishcouncil.org/3cf459d4-bb0c-45a6-a236-7183afdf84d5?key=a7774cca4f0c637c792946784be0fd991ca436d1a344468af00f16b9ad776a3f&zarsrc=1303&utm_source=zalo&utm_medium=zalo&utm_campaign=zalo&gidzl=06VUUgmT4W07VDv-hmeL3m1rsdIq0nKA6og9TR9S4GfE9ebpvLf1N1fmY7FZ2q08777ST6AQJ_r9g1mK00" target="_blank">
+                    <h3>Aptis ESOL B2 資格</h3>
+                    <p>発行者: British Council</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>連絡先</h2>
+            <p>電話番号: 0367982593</p>
+            <p>Email: <a href="mailto:nguyentuanquangtech@gmail.com">nguyentuanquangtech@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 グエン・トゥアン・クアン</p>
+    </footer>
+
+    <div class="social-media-btns">
+        <a href="https://zalo.me/0367982593" target="_blank" class="social-btn zalo-btn">
+            <img src="Picture_social_media/zalo.png" alt="Zalo" class="social-icon">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100011157101472" target="_blank" class="social-btn fb-btn">
+            <img src="Picture_social_media/FB.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://github.com/Ken111111" target="_blank" class="social-btn github-btn">
+            <img src="Picture_social_media/Gthub.png" alt="GitHub" class="social-icon">
+        </a>
+    </div>
+
+</body>
+</html>

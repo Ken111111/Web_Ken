@@ -99,6 +99,25 @@ a:hover {
     text-decoration: underline;
 }
 
+/* flag */
+.flag-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.flag {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.flag img {
+    width: 50px;
+    height: 40px;
+    border-radius: 20%;
+    
+}
+/* flag */
+
 /* Hobbies */
 .hobby-cards {
     display: flex;
@@ -338,8 +357,6 @@ a:hover {
     font-size: 16px;
     color: #555;
 }
-
-
 
 /* Skills */
 
