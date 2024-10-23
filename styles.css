@@ -307,6 +307,10 @@ a:hover {
 
 .skill-item {
     background-color: #ffffff;
+    border-left: 3px solid #007bff;
+    border-top: 3px solid #007bff;
+    border-bottom: 3px solid #007bff;
+    border-right: 3px solid #007bff;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -334,6 +338,7 @@ a:hover {
     font-size: 16px;
     color: #555;
 }
+
 
 
 /* Skills */
@@ -459,11 +464,17 @@ footer p {
 }
 /* footer */
 
-/* zalo */
-.zalo-btn {
+/* Cấu hình chung cho các nút mạng xã hội */
+.social-media-btns {
     position: fixed;
-    bottom: 70px; /* Đặt nút Zalo cách nút cuộn về đầu trang */
-    left: 15px; 
+    bottom: 70px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các nút */
+}
+
+.social-btn {
     width: 50px;
     height: 50px;
     background-color: #ffffff;
@@ -473,18 +484,36 @@ footer p {
     align-items: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển động */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.zalo-btn:hover {
-    background-color: #006bb3;
+.social-btn:hover {
     transform: scale(1.1); /* Phóng to nút khi di chuột qua */
 }
 
-.zalo-icon {
-    width: 34px; /* Kích thước icon Zalo */
+/* Cấu hình riêng cho từng nút */
+
+/* Zalo */
+.zalo-btn:hover {
+    background-color: #006bb3; /* Màu xanh của Zalo */
+}
+
+/* Facebook */
+.fb-btn:hover {
+    background-color: #3b5998; /* Màu xanh của Facebook */
+}
+
+/* GitHub */
+.github-btn:hover {
+    background-color: #333; /* Màu đen của GitHub */
+}
+
+/* Cấu hình cho icon mạng xã hội */
+.social-icon {
+    width: 34px;
     height: 34px;
 }
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
